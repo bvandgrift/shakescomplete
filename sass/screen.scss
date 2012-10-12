@@ -1,0 +1,110 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3/border-radius";
+@import "compass/css3/inline-block";
+
+/*
+ * dull:
+ * #332222
+ * #221122
+ * #553333
+ * #bb9966
+ * #aa9966
+ *
+ * vibrant
+ * #442222
+ * #222222
+ * #884422
+ * #eecc77
+ * #ddbb77
+ */
+body {
+  background-color: #332222;
+  color: #ddbb77;
+  font: Palatino, serif, 14px;
+}
+
+h1 { 
+  margin: 20px auto;
+  font-size: 2.4em; 
+  text-align: center;
+}
+
+.container {
+  width: 600px;
+  margin: 20px auto;
+}
+
+ul.results {
+  font-size: 1.4em;
+  line-height: 1.4em;
+  li.result {
+    @include inline-block;
+    vertical-align: bottom;
+    width: 100%;
+    * {
+      @include inline-block;
+    }
+    .title {
+      font-style: italic;
+    }
+    .reference {
+      font-size: 0.6em;
+    }
+  }
+}
+
+
+
+form {
+  width: 100%;
+  margin: 20px auto;
+  .elements {
+    width: 600px;
+    margin: auto;
+    span {
+      display: none;
+    }
+    * {
+      background-color: #ffddbb;
+      border-color: #553333;
+      font-size: 2em;
+      padding: 10px;
+    }
+    input {
+      @include border-top-left-radius(8px);
+      @include border-bottom-left-radius(8px);
+      border-style:inset;
+      width: 500px;
+    }
+    button {
+      @include border-top-right-radius(8px);
+      @include border-bottom-right-radius(8px);
+      border-style: outset;
+      width: 95px;
+    }
+  }
+}
+
+ul.ui-autocomplete {
+  @include border-bottom-right-radius(8px);
+  @include border-bottom-left-radius(8px);
+  background-color: #ffddbb;
+  width: 300px;
+  border-color: #553333;
+  color: #553333;
+  font-size: 2em;
+  li {
+    padding: 5px 10px 5px 10px;
+    width: 300px;
+    a {
+      &:hover {
+        background-color: yellow;
+      }
+    }
+  }
+}
