@@ -23,29 +23,97 @@
  * #ddbb77
  */
 body {
-  background-color: #332222;
-  color: #ddbb77;
+  background-color: #fff;
+  color: #221122;
   font: Palatino, serif, 14px;
 }
 
 h1 { 
-  margin: 20px auto;
-  font-size: 2.4em; 
+  margin: -16px auto 0 auto;
+  font-family: jim-nightshade, serif;
+  color: #553333;
+  font-size: 8em; 
+  font-weight: 500;
   text-align: center;
+  width: 100%;
 }
 
+h2 {
+  font-family: maiden-orange, serif;
+  &.lead-in {
+    text-align: left;
+    font-size: 2.4em;
+    margin-top: 14px;
+  }
+  &.lead-out {
+    margin-top: -22px;
+    text-align: right;
+    font-size: 3.4em;
+  }
+}
+  
 .container {
   width: 600px;
   margin: 20px auto;
 }
 
+
+.post-content {
+  margin-top: 10px;
+  background: url('/images/shakespeare-thick.jpg') no-repeat top right;
+  height: 300px;
+}
+
+
+
+form {
+  margin-top: 11px;
+  .elements {
+    @include border-radius(8);
+    border: 3px solid black;
+    background: url('/images/parchment.jpg') #fff;
+    width: 594px;
+    margin: auto;
+    span {
+      display: none;
+    }
+    * {
+      background: transparent;
+      border: none;
+      font-size: 1.8em;
+      padding: 9px;
+    }
+    input {
+      width: 480px;
+      &:focus {
+        outline: none;
+      }
+    }
+    button {
+      float: right;
+      width: 95px;
+    }
+  }
+}
+
 ul.results {
+  margin-top: 25px;
+  background: url('/images/parchment.jpg') no-repeat #fff;
+  @include border-radius(8px);
+  border: 3px solid black;
+  width: 594px;
+  min-height: 100px;
   font-size: 1.4em;
   line-height: 1.4em;
   li.result {
+    width: 96%;
+    padding: 1% 2%;
     @include inline-block;
     vertical-align: bottom;
-    width: 100%;
+    &:hover {
+      @include border-radius(8px);
+      background-color: #dfd3a0;
+    }
     * {
       @include inline-block;
     }
@@ -58,53 +126,10 @@ ul.results {
   }
 }
 
-
-
-form {
+.footer {
   width: 100%;
-  margin: 20px auto;
-  .elements {
-    width: 600px;
-    margin: auto;
-    span {
-      display: none;
-    }
-    * {
-      background-color: #ffddbb;
-      border-color: #553333;
-      font-size: 2em;
-      padding: 10px;
-    }
-    input {
-      @include border-top-left-radius(8px);
-      @include border-bottom-left-radius(8px);
-      border-style:inset;
-      width: 500px;
-    }
-    button {
-      @include border-top-right-radius(8px);
-      @include border-bottom-right-radius(8px);
-      border-style: outset;
-      width: 95px;
-    }
-  }
-}
-
-ul.ui-autocomplete {
-  @include border-bottom-right-radius(8px);
-  @include border-bottom-left-radius(8px);
-  background-color: #ffddbb;
-  width: 300px;
-  border-color: #553333;
-  color: #553333;
-  font-size: 2em;
-  li {
-    padding: 5px 10px 5px 10px;
-    width: 300px;
-    a {
-      &:hover {
-        background-color: yellow;
-      }
-    }
+  text-align: right;
+  a {
+    text-decoration: none;
   }
 }

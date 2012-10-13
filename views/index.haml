@@ -6,23 +6,33 @@
     %script{src: "http://code.jquery.com/jquery-1.8.2.js"}
     %script{src: "http://code.jquery.com/ui/1.9.0/jquery-ui.js"}
     %script{src: "/js/application.js"}
+    %script{src: "http://use.edgefonts.net/jim-nightshade.js"}
+    %script{src: "http://use.edgefonts.net/maiden-orange.js"}
     /[if IE]
       <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
   %body
     .container
-      %h1 What would Shakespeare say?
-      %form{:action => '/find', :method => 'post'}
+      %h2.lead-in what would
+      %h1 Shakespeare
+      %h2.lead-out say?
+      %form{:action => '/', :method => 'post'}
         .elements
-          %input{id: "query", name: 'query', type: "text", value: "all is mended"}/
+          %input{id: "query", name: 'query', type: "text", value: "havoc"}/
           %button Find
       %ul.results
         - @results.each do |result|
           %li.result
             .quote
               = result[:quote]
-            .title
-              = result[:title]
-            .reference
-              = result[:reference]
-
- 
+            - if result[:title]
+              %br
+              .title
+                \--
+                = result[:title]
+              .reference
+                = result[:reference]
+      .post-content
+      .footer
+        created by
+        %a{href: "http://ben.vandgrift.com"}
+          ben vandgrift
