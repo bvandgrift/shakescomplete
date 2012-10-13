@@ -6,6 +6,8 @@
 @import "compass/reset";
 @import "compass/css3/border-radius";
 @import "compass/css3/inline-block";
+@import "compass/css3/text-shadow";
+
 
 /*
  * dull:
@@ -22,6 +24,7 @@
  * #eecc77
  * #ddbb77
  */
+
 body {
   background-color: #fff;
   color: #221122;
@@ -29,6 +32,7 @@ body {
 }
 
 h1 { 
+  @include text-shadow;
   margin: -16px auto 0 auto;
   font-family: jim-nightshade, serif;
   color: #553333;
@@ -64,8 +68,6 @@ h2 {
   height: 300px;
 }
 
-
-
 form {
   margin-top: 11px;
   .elements {
@@ -90,8 +92,14 @@ form {
       }
     }
     button {
+      font-family: maiden-orange, serif;
+      line-height: 1.6em;
       float: right;
       width: 95px;
+      &:focus {
+        outline: none;
+        color: #533;
+      }
     }
   }
 }
@@ -130,6 +138,8 @@ ul.results {
   width: 100%;
   text-align: right;
   a {
+    color: #533;
     text-decoration: none;
+    &:visited, &:hover { color: #333; }
   }
 }
