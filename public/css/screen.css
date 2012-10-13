@@ -1,0 +1,249 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../.rvm/gems/ruby-1.9.3-p194@shakes/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../.rvm/gems/ruby-1.9.3-p194@shakes/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../.rvm/gems/ruby-1.9.3-p194@shakes/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../.rvm/gems/ruby-1.9.3-p194@shakes/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../.rvm/gems/ruby-1.9.3-p194@shakes/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../.rvm/gems/ruby-1.9.3-p194@shakes/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../.rvm/gems/ruby-1.9.3-p194@shakes/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../.rvm/gems/ruby-1.9.3-p194@shakes/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../.rvm/gems/ruby-1.9.3-p194@shakes/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/*
+ * dull:
+ * #332222
+ * #221122
+ * #553333
+ * #bb9966
+ * #aa9966
+ *
+ * vibrant
+ * #442222
+ * #222222
+ * #884422
+ * #eecc77
+ * #ddbb77
+ */
+/* line 28, ../../sass/screen.scss */
+body {
+  background-color: #fff;
+  color: #221122;
+  font: Palatino, serif, 14px;
+}
+
+/* line 34, ../../sass/screen.scss */
+h1 {
+  text-shadow: 0px 0px 1px #aaaaaa;
+  margin: -16px auto 0 auto;
+  font-family: jim-nightshade, serif;
+  color: #553333;
+  font-size: 8em;
+  font-weight: 500;
+  text-align: center;
+  width: 100%;
+}
+
+/* line 45, ../../sass/screen.scss */
+h2 {
+  font-family: maiden-orange, serif;
+}
+/* line 47, ../../sass/screen.scss */
+h2.lead-in {
+  text-align: left;
+  font-size: 2.4em;
+  margin-top: 14px;
+}
+/* line 52, ../../sass/screen.scss */
+h2.lead-out {
+  margin-top: -22px;
+  text-align: right;
+  font-size: 3.4em;
+}
+
+/* line 59, ../../sass/screen.scss */
+.container {
+  width: 600px;
+  margin: 20px auto;
+}
+
+/* line 65, ../../sass/screen.scss */
+.post-content {
+  margin-top: 10px;
+  background: url("/images/shakespeare-thick.jpg") no-repeat top right;
+  height: 300px;
+}
+
+/* line 71, ../../sass/screen.scss */
+form {
+  margin-top: 11px;
+}
+/* line 73, ../../sass/screen.scss */
+form .elements {
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  -ms-border-radius: 8;
+  -o-border-radius: 8;
+  border-radius: 8;
+  border: 3px solid black;
+  background: url("/images/parchment.jpg") white;
+  width: 594px;
+  margin: auto;
+}
+/* line 79, ../../sass/screen.scss */
+form .elements span {
+  display: none;
+}
+/* line 82, ../../sass/screen.scss */
+form .elements * {
+  background: transparent;
+  border: none;
+  font-size: 1.8em;
+  padding: 9px;
+}
+/* line 88, ../../sass/screen.scss */
+form .elements input {
+  width: 480px;
+}
+/* line 90, ../../sass/screen.scss */
+form .elements input:focus {
+  outline: none;
+}
+/* line 94, ../../sass/screen.scss */
+form .elements button {
+  font-family: maiden-orange, serif;
+  line-height: 1.6em;
+  float: right;
+  width: 95px;
+}
+/* line 99, ../../sass/screen.scss */
+form .elements button:focus {
+  outline: none;
+  color: #533;
+}
+
+/* line 107, ../../sass/screen.scss */
+ul.results {
+  margin-top: 25px;
+  background: url("/images/parchment.jpg") no-repeat white;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  border: 3px solid black;
+  width: 594px;
+  min-height: 100px;
+  font-size: 1.4em;
+  line-height: 1.4em;
+}
+/* line 116, ../../sass/screen.scss */
+ul.results li.result {
+  width: 96%;
+  padding: 1% 2%;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  vertical-align: bottom;
+}
+/* line 121, ../../sass/screen.scss */
+ul.results li.result:hover {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  background-color: #dfd3a0;
+}
+/* line 125, ../../sass/screen.scss */
+ul.results li.result * {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+/* line 128, ../../sass/screen.scss */
+ul.results li.result .title {
+  font-style: italic;
+}
+/* line 131, ../../sass/screen.scss */
+ul.results li.result .reference {
+  font-size: 0.6em;
+}
+
+/* line 137, ../../sass/screen.scss */
+.footer {
+  width: 100%;
+  text-align: right;
+}
+/* line 140, ../../sass/screen.scss */
+.footer a {
+  color: #533;
+  text-decoration: none;
+}
+/* line 143, ../../sass/screen.scss */
+.footer a:visited, .footer a:hover {
+  color: #333;
+}
